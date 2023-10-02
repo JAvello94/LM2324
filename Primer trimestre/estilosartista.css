@@ -1,0 +1,64 @@
+body {
+    background-color: lightcoral;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+img {
+    width: 35%;
+    height: 35%;
+    float: left;
+}
+.contenedor {
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.historia {
+
+    margin: 10px;
+    background-color: brown;
+    color: white;
+    width: 70%;
+    text-align: justify;
+    padding: 5px;
+}
+
+.discografia {
+    margin: 10px;
+    background-color: blueviolet;
+    color: white;
+    width: 25%;
+    text-align: center;
+}
+
+.restaurante {
+    background-color: violet;
+    margin: 10px;
+    color: white;
+    padding: 5px;
+}
+@media (max-width: 800px) {
+    .contenedor {
+      flex-direction: column;
+    }
+
+    .historia {
+        width: 97%;
+    }
+
+    .discografia {
+        width: 97%;
+    }
+  }
