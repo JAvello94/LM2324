@@ -12,10 +12,14 @@ h2 {
     text-align: center;
 }
 
-img {
+.eminem {
     width: 35%;
     height: 35%;
     float: left;
+}
+.banner {
+    width: 100%;
+
 }
 .contenedor {
     background-color: red;
@@ -41,6 +45,7 @@ img {
     color: white;
     width: 25%;
     text-align: center;
+    padding: 5px;
 }
 
 .restaurante {
@@ -48,7 +53,33 @@ img {
     margin: 10px;
     color: white;
     padding: 5px;
+    text-align: justify;
 }
+
+.logros {
+    background-color: purple;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    text-align: justify;
+    width: 50%;
+
+}
+
+.video {
+    background-color: rebeccapurple;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    text-align: justify;
+    width: 45%;
+}
+
+.logos {
+    width: 15%;
+    float: right;
+}
+
 @media (max-width: 800px) {
     .contenedor {
       flex-direction: column;
@@ -59,6 +90,13 @@ img {
     }
 
     .discografia {
+        width: 97%;
+    }
+
+    .logros {
+        width: 97%;
+    }
+    .video {
         width: 97%;
     }
   }
