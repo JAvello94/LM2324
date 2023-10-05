@@ -80,6 +80,21 @@ h2 {
     float: right;
 }
 
+.musica {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, blueviolet, purple);
+
+}
+
+a {
+    text-decoration: none;
+    
+}
 @media (max-width: 800px) {
     .contenedor {
       flex-direction: column;
