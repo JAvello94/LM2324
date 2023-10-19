@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        #conector {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <form action="registro.php">
+        <fieldset>
+        <legend>Rellenar</legend>
+        <p><input type="radio" name="idioma" value="idiomaingles">Inglés</p>
+        <p><input type="radio" name="idioma" value="idiomaaleman">Alemán</p>
+        <p><input type="radio" name="idioma" value="idiomafrances">francés</p>
+        <p><select name="conector" id="conector">
+            <option value="usb">USB</option>
+            <option value="paralelo">Paralelo</option>
+            <option value="ps2">PS2</option>
+        </select></p>
+        <p><label for="nombre">Nombre</label>
+        <input type="text" name="nombre"></p>
+        <p><label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos"></p>
+         </fieldset>
+         <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+            <p><select multiple name="sexo" id="sexo">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option></select></p> 
+            <p><input type="checkbox" name="sexo" value="sexomujer">
+            <label for="sexo">Mujer</label></p>
+            <p><input type="checkbox" name="sexo" value="sexohombre">
+                <label for="sexo">Hombre</label></p>
+            <p><label for="fecha">Elija una fecha</label>
+                <input type="date"></p>
+         </fieldset>
+    </form>
+    
+</body>
+</html>
