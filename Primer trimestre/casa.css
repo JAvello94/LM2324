@@ -43,3 +43,113 @@
     top: 200px;
     left: 450px;
 }
+
+.ventana1 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    position: absolute;
+    top: 450px;
+    left: 550px;
+}
+
+.cristal1 {
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    position: absolute;
+    top: 465px;
+    left: 565px;
+}
+
+.cristal2 {
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    position: absolute;
+    top: 465px;
+    left: 605px;
+}
+
+.cristal3 {
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    position: absolute;
+    top: 510px;
+    left: 565px;
+}
+
+.cristal4 {
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    position: absolute;
+    top: 510px;
+    left: 605px;
+}
+
+.puerta {
+    width: 70px;
+    height: 150px;
+    background-color: burlywood;
+    position: absolute;
+    top: 650px;
+    left: 700px;
+
+}
+
+.pomo {
+    background: brown;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 725px;
+    left: 745px;
+}
+
+.ventana2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    position: absolute;
+    top: 450px;
+    left: 850px;
+}
+
+.cristal5 {
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    position: absolute;
+    top: 465px;
+    left: 865px;
+}
+
+.cristal6 {
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    position: absolute;
+    top: 465px;
+    left: 910px;
+}
+
+.cristal7 {
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    position: absolute;
+    top: 510px;
+    left: 865px;
+}
+
+.cristal8 {
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    position: absolute;
+    top: 510px;
+    left: 910px;
+}
