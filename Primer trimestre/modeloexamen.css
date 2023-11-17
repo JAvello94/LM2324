@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imagenes/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    
+    
+}
+
+.contenedor {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
+
+}
+
+header {
+    border-radius: 20px;
+    background-color:#b28306;
+    width: 100%;
+
+}
