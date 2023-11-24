@@ -1,0 +1,51 @@
+html {
+    background-color: #f6ddcc;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.opciones {
+    list-style-type: none;
+    background-color: #95a5a6;
+    margin: 5px;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.menu {
+    width: auto;
+    float: right;
+    margin-top: -15px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 480px){
+
+    .menu{
+        float: none;
+        margin: auto;
+
+    }
+    
+}
+
+@media print {  
+    
+    html {
+        background-color: white;
+    }
+
+    .menu {
+        display: none;
+    }
+
+}
