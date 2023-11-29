@@ -28,3 +28,6 @@ fieldset {
     display: grid;
     grid-template-columns: auto auto;
 }
+input {
+    width: 100%;
+}
