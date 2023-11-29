@@ -1,0 +1,30 @@
+body {
+    background-color: lightgrey;
+
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.etiqueta {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.rellenar {
+   grid-column-start: 2;
+   grid-column-end: 3;
+}
+fieldset {
+    display: grid;
+    grid-template-columns: auto auto;
+}
