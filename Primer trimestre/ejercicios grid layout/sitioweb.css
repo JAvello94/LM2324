@@ -1,0 +1,45 @@
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial;
+    text-align: center;
+    
+}
+
+main {
+    width: 80%;
+    height: 84vh;
+    background-color: lightgrey;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 10% 20% auto 10%;
+    border: 2px dashed black;
+    
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: lightblue;
+    border: 4px solid black;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: lemonchiffon;
+    border: 4px solid black;
+    
+}
+
+article {
+    background-color: lightsalmon;
+    border: 4px solid black;
+}
+
+aside {
+    border: 4px solid black;
+    background-color: lightseagreen ;
+}
