@@ -1,0 +1,48 @@
+@import url('https://fonts.cdnfonts.com/css/century-gothic-paneuropean');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Century Gothic Paneuropean", Arial, Helvetica,sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white; 
+}
+
+header {
+    width: 100%;
+    background-color: darkgrey;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: darkgoldenrod;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    width: 20%;
+    color: white;
+    background-color: darkcyan;
+}
+
+section {
+    width: 80%;
+    background-color: darkolivegreen;
+    color: white;
+}
