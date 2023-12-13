@@ -112,6 +112,7 @@ footer {
 @media print {
     * {
         background-color: white;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     section {
