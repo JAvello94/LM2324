@@ -32,6 +32,7 @@ input{
     border: none;
     padding: 20px;
     border-radius: 10px;
+    flex-basis: 300px;
 
 }
 
@@ -42,7 +43,7 @@ input:hover, input:focus {
 
 
 button {
-    flex-basis: 300px;
+    flex-basis: 200px;
     position: relative;
     margin: 10px;
     border-radius: 10px;
