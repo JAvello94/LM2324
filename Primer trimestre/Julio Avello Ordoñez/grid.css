@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+img {
+    border-radius: 30px;
+}
+body {
+    background-color: #eee;
+    color: #434344;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    justify-content: center;
+    align-content: center;
+
+}
+aside {
+    padding: 20px;
+    border-top: 3px solid #0d6427;
+    background-color: #f9f9f9;
+}
+
+aside a {
+    text-decoration: none;
+    color: #434344;
+    cursor: pointer;
+}
+
+.contenedor {
+    max-width: 850px;
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #908d8d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 5px dashed #0d6427;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+h2 {
+    color: #ada70a;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+    color: #434344;
+    cursor: pointer;
+}
+.navegacion , .navegacion2 {
+    margin-right: 15px;
+}
+
+button {
+    border-radius: 1.25rem;
+    background-color: #0d6427;
+    border: none;
+    justify-self: end;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 1rem;
+    font-size: .75rem;
+}
+
+li {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #0d6427;
+    color: white;
+}
+
+.pie {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 760px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    header {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    section {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    aside {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    footer {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}

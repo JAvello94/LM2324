@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-x: center;
+    background-attachment: fixed;
+    color: black;
+    font-size: 200%;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    justify-content: center;
+
+}
+
+input{
+    margin: 10px;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+input:hover, input:focus {
+    outline: 5px solid #3759e2;
+}
+
+
+
+button {
+    flex-basis: 300px;
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #3759e2;
+
+}
+
+::placeholder {
+    font-size: 200%;
+}
+
