@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulos mágicos</title>
+    <script src="circulos.js"></script>
+    <style>
+
+    .circulos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .botones {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    #rojo {
+     width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: red;
+     margin: 15px;
+}
+
+    #amarillo {
+     width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: yellow;
+     margin: 15px;
+}
+
+    #morado {
+     width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: purple;
+     margin: 15px;
+}
+button {
+    width: 100px;
+    margin: 15px;
+}
+
+    </style>
+</head>
+<body>
+<div class="circulos">
+    <div id="rojo"></div>
+    <div id="amarillo"></div>
+    <div id="morado"></div>
+</div>
+    <div class="botones">
+        <button id="botonrojo" onclick="drojo()">Desaparecer rojo</button>
+        <button id="botonamarillo" onclick="damarillo()">Desaparecer amarillo</button>
+        <button id="botonmorado" onclick="dmorado()">Desaparecer morado</button>
+    </div>
+</body>
+</html>
+
