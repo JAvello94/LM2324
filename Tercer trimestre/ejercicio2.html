@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 JQuery</title>
+    <script src="jquery1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#ocultar").click (function(){
+            $("#encabezado,.pares").hide();
+        })
+
+        $("#mostrar").click (function(){
+            $("h1,p").show();
+        })
+    });
+</script>
+</head>
+<body>
+    <h1 id="encabezado">Encabezado</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem consectetur voluptate delectus suscipit odit temporibus voluptas, unde consequatur. Voluptas, dolorum commodi iste nobis corporis officia autem enim alias recusandae fugit!</p>
+    <p class="pares">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem consectetur voluptate delectus suscipit odit temporibus voluptas, unde consequatur. Voluptas, dolorum commodi iste nobis corporis officia autem enim alias recusandae fugit!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem consectetur voluptate delectus suscipit odit temporibus voluptas, unde consequatur. Voluptas, dolorum commodi iste nobis corporis officia autem enim alias recusandae fugit!</p>
+    <div>
+        <button id="ocultar">Ocultar</button><button id="mostrar">Mostrar</button>
+    </div>
+</body>
+</html>

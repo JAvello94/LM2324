@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquey2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $ ("div").mouseenter(function(){
+                $("#ejemplo").hide();
+            })
+
+            $ ("div").mouseleave(function(){
+                $("#ejemplo").show();
+            })
+        });
+    </script>
+    <style>
+        div {
+            background-color: red;
+            color: white;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div><p id="ejemplo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam delectus, recusandae exercitationem voluptatibus unde. Sint illo aperiam magni pariatur fuga officia dolorem, porro, eos provident quasi repellendus error voluptatem?</p></div>
+    
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam delectus, recusandae exercitationem voluptatibus unde. Sint illo aperiam magni pariatur fuga officia dolorem, porro, eos provident quasi repellendus error voluptatem?</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam delectus, recusandae exercitationem voluptatibus unde. Sint illo aperiam magni pariatur fuga officia dolorem, porro, eos provident quasi repellendus error voluptatem?</p>
+</body>
+</html>
