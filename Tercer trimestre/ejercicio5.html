@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 JQuery</title>
+    <script src="jquery1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#aparecer").click (function(){
+                $(".uno").fadeIn(1000);
+                $(".dos").fadeIn(1500);
+                $(".tres").fadeIn(2000);
+            })
+            $("#desaparecer").click (function(){
+                $(".uno").fadeOut(1000);
+                $(".dos").fadeOut(1500);
+                $(".tres").fadeOut(2000);
+            })
+            $("#alternar").click (function(){
+                $(".uno").fadeToggle();
+                $(".dos").fadeToggle();
+                $(".tres").fadeToggle();
+            })
+        });
+        
+    </script>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .uno{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+
+        .dos{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+
+        .tres {
+            background-color: purple;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="uno"></div>
+        <div class="dos"></div>
+        <div class="tres"></div>
+    </div>
+    <div class="containerdos">
+        <button id="aparecer">FadeIn</button>
+        <button id="desaparecer">FadeOut</button>
+        <button id="alternar">FadeToggle</button>
+    </div>
+    
+</body>
+</html>

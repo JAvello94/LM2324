@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 3 JQuery</title>
+    <title>Ejercicio 4 JQuery</title>
     <script src="jquery1.js"></script>
-<script>
-    let tamano = 100
+    <script>
+         let tamano = 100
     $(document).ready(function () {
         $("#agrandar").click (function(){
-            $("#encabezado,.pares").css("font-size", "300%");
+            $("#encabezado,.pares").css("font-size", "300%").css ('color', 'blue');
         })
 
         $("#empequenecer").click (function(){
-            $("#encabezado,.pares").css("font-size","50%");
+            $("#encabezado,.pares").css("font-size","50%").css ('color', 'red');
         })
     });
-</script>
+    </script>
 </head>
 <body>
     <h1 id="encabezado">Encabezado</h1>
@@ -26,5 +26,6 @@
     <div>
         <button id="agrandar">Agrandar</button><button id="empequenecer">Empequeñecer</button>
     </div>
+    
 </body>
 </html>

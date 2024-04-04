@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 JQuery</title>
+    <script src="jquery1.js"></script>
+    <script>
+     $(document).ready(function () {
+            $("#encabezados").html(
+                $("h1").length
+            );
+            $("#parrafos").html(
+                $("p").length
+            );
+            $("#enlaces").html(
+                $("a").length
+            );
+            $("#imagenes").html(
+                $("img").length
+            );
+        
+     });
+      
+    </script>
+</head>
+<body>
+    <h1>Encabezado 1</h1>
+    <h1>Encabezado 2</h1>
+    <h1>Encabezado 3</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur <a href="https://es.wikipedia.org/wiki/Game_of_Thrones">a</a> adipisicing elit. Optio culpa voluptatibus tempora, omnis sed beatae assumenda qui illum expedita ad quidem consequuntur, fuga officiis nulla, magnam reiciendis hic adipisci in.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio culpa voluptatibus tempora, omnis sed beatae assumenda qui illum expedita ad quidem consequuntur, <a href="https://es.wikipedia.org/wiki/Game_of_Thrones">a</a> fuga officiis nulla, magnam reiciendis hic adipisci in.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio culpa voluptatibus tempora, omnis sed beatae assumenda qui illum expedita ad quidem consequuntur, fuga officiis nulla, magnam reiciendis hic adipisci in.</p>
+
+    <img src="/Primer trimestre/imagenes/cesped.jpeg" alt="WEEE">
+
+    <table>
+        <th>Encabezados</th>
+        <th>Parrafos</th>
+        <th>Enlaces</th>
+        <th>Imágenes</th>
+    <tr>
+        <td id="encabezados"></td>
+        <td id="parrafos"></td>
+        <td id="enlaces"></td>
+        <td id="imagenes"></td>
+    </tr>
+</table>
+
+    
+</body>
+</html>
