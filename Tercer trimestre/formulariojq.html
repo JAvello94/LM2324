@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se tu propio jefe</title>
+    <script src="jquery1.js"></script>
+    <style>
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .condiciones{
+            margin: auto;
+        }
+
+        input {
+            margin: 5px 5px;
+            width: 40%;
+        }
+
+        p {
+            color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function(){  
+                let patroncorreo = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+                let patroncontrasena = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*-?&])([A-Za-z\d$@$!-%*?&]|[^ ]){8,15}$/;     
+                let nombre = $("#nombre").val();
+                let apellidos = $("#apellidos").val();
+                let correo = $("#correo").val();
+                let contrasena1 = $("#contraseña1").val();
+                let contrasena2 = $("#contraseña2").val();
+                let privacidad = $("#politicas").is(":checked");
+                
+                if (nombre==""){
+                    $("#errornombre").text("Rellenar el campo nombre");
+                }
+                else {
+                    $("#errornombre").text("");
+                }
+                if (apellidos == ""){
+                    $("#errorapellidos").text("Rellenar el campo apellidos");
+                }
+                else {
+                    $("#errorapellidos").text("");
+                }
+                if (correo == ""){
+                    $("#errorcorreo").text("Rellenar el campo correo");
+                }
+                else {
+                        if (!patroncorreo.test(correo)){
+                            $("#errorcorreo").text("No es un mail valido");
+                        }
+                    else {
+                        $("#errorcorreo").text("");
+                    };
+                }
+                if (contrasena1!=contrasena2){
+                    $("#errorcontraseña1").text("Las contraseñas deben coindcidir");
+                    $("#errorcontraseña2").text("Las contraseñas deben coindcidir");
+                }
+                else{
+                        if(!patroncontrasena.test(contrasena1)){
+                            $("#errorcontraseña1").text("No es una contraseña valida");
+                            $("#errorcontraseña2").text("No es una contraseña valida");
+                        }
+                        else {
+                            $("#errorcontraseña1").text("");
+                            $("#errorcontraseña2").text("");
+                        }
+
+                }
+                if (!privacidad){
+                    $("#errorprivacidad").text("Debe aceptar las politicas de privacidad");
+                }
+                else {
+                    $("#errorprivacidad").text("");
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><p id="errornombre"></p>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" required><p id="errorapellidos"></p>
+        <label for="correo">Email:</label>
+        <input type="email" id="correo" required><p id="errorcorreo"></p>
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="nacimiento" required>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" required>
+        <label for="contraseña1">Contraseña:</label>
+        <input type="text" id="contraseña1" required><p id="errorcontraseña1"></p>
+        <label for="contraseña2">Repetir contraseña:</label>
+        <input type="text" id="contraseña2" required><p id="errorcontraseña2"></p>
+        <div class="condiciones"><label for="politicas">Acepta las politicas</label><p id="errorprivacidad"></p></div>
+        <input type="checkbox" id="politicas" required>
+        <button>Registrarse</button>
+    </div>
+    
+</body>
+</html>
